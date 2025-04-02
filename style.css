@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --a:0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.left{
+    width: 25vw;
+    padding: 10px;
+}
+
+.right{
+    width: 75vw;
+}
+
+.home ul li{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    width: 14px;
+    padding-top: 14px;
+    font-weight: bold;
+}
+
+.heading{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    padding: 23px 14px;
+    font-weight: bold;
+    align-items: center;
+    font-size: 13px;
+}
+
+.heading img{
+    width: 30px;
+}
+
+.library{
+    min-height: 70.5vh;
+    position: relative;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    font-size: 10px;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.footer a{
+    color: grey;
+}
+
+.right{
+    margin: 15px 0;
+    position: relative;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(50, 50, 50);
+}
+
+.header > *{
+    padding: 20PX;
+}
+
+.spotifyPlaylists{
+    padding: 16px;
+}
+
+.cardContainer{
+    margin: 30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.card{
+    position: relative;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #252525;
+    transition: all 0.6s;
+}
+
+.card:hover{
+    background-color: rgb(124, 122, 122);
+    cursor: pointer;
+    --a: 1;
+}
+ 
+.play-btn svg{
+    position: absolute;
+    right: 10px;
+    top: 150px;
+    width: 60px;
+    opacity: var(--a);
+    transition: all 1s ease-out;
+}
+
+.buttons > *{
+    margin: 0 10px;
+}
+
+.signupbtn{
+    background-color: rgb(50, 50, 50);
+    color: rgb(131 127 127);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signupbtn:hover{
+    font-size: 17px;
+    color: white;
+}
+
+.loginbtn{
+    background-color: white;
+    color: black;
+    border-radius: 21px;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+    width: 79px;
+}
+
+.loginbtn:hover{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.card > *{
+    padding-top: 10px;
+}
+
+.playbar{
+    position: fixed;
+    bottom: 16px;
+    filter: invert(1);
+    background-color: #dad5d5;
+    border-radius: 10px;
+    padding: 10px;
+    width: 70vw;
+    height: 40px;
+}
+
+.songButtons{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.songList ul{
+    padding: 0 10px;
+}
+
+.songList ul li{
+    list-style-type: decimal;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    padding: 12px 0;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 11px;
+    padding: 7px;
+    justify-content: space-between;
+}
+
+.songList{
+    overflow: auto;
+    height: 341px;
+    margin-bottom: 5px;
+}
+
+.info{
+    font-size: 13px;
+    width: 344px;
+}
+
+.info div{
+    word-break: break-all;
+}
+
+.playnow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playnow span{
+    font-size: 13px;
+    width: 30px;
+    padding: 0 5px;
+}
+
+.seekbar{
+    height: 4px;
+    width: 98%;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    border-radius: 10px;
+    margin: 6px;
+    cursor: pointer;
+}
+
+.circle{
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+    background-color: black;
+    position: relative;
+    bottom: 6px;
+    left: 0%;
+    transition: left 0.5s;
+}
+
+.songButtons img{
+    cursor: pointer;
+}
+
+.timevol{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.songinfo{
+    color: black;
+    padding: 0 12px;
+    width: 250px;
+}
+
+.songtime{
+    color: black;
+    padding: 0 12px;
+    width: 125px;
+}
+
+.volume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.range input{
+    cursor: pointer;
+}
+
+.abovebar{
+    display: flex;
+    justify-content: space-between;
+}
